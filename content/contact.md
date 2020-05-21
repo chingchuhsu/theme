@@ -7,3 +7,5 @@ draft: false
 Helloo you can contact me via
 
 cc@email.com
+
+I am currently based in Berlin, Germany.
