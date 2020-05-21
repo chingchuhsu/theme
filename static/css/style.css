@@ -6,16 +6,24 @@ body {
     max-width: 768px;
     margin: 0 auto;
     margin-top: 10em;
+    margin-bottom: 10em;
 }
 
-#hero h1 {
+h1 {
     font-size: 4rem;
 }
-#hero h2 {
+
+h2 {
     font-size: 3rem;
+    line-height: 2em;
 }
 
-.markdown {
+.headline {
+    text-align: center;
+
+}
+
+.markdown, main {
     max-width: 768px;
     margin: 0 auto;
 }

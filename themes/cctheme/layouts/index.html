@@ -3,4 +3,15 @@
     <h1>Hey I'm Ching Chu</h1>
     <h2>I'm a data scientist</h2>
 </div>
+<main>
+    <div class="headline">
+        <h2>Personal Projects</h2>
+        <p>Some of my favorite projects that I've created.</p>
+    </div>
+    <ul>
+        {{ range .Site.Pages }}
+        <li>{{ .Title }}</li>
+        {{ end }}
+    </ul>
+</main>
 {{ end }}
