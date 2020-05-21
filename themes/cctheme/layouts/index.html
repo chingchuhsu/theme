@@ -9,8 +9,8 @@
         <p>Some of my favorite projects that I've created.</p>
     </div>
     <ul>
-        {{ range .Site.Pages }}
-        <li>{{ .Title }}</li>
+        {{ range where .Site.RegularPages "Section" "project" }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</li></a>
         {{ end }}
     </ul>
 </main>
