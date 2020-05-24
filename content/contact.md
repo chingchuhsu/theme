@@ -8,4 +8,6 @@ Helloo you can contact me via
 
 cc@email.com
 
+[Github](https://github.com/chingchuhsu)
+
 I am currently based in Berlin, Germany.

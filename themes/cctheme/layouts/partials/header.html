@@ -1,8 +1,15 @@
-<header><nav><ul>
-    <li><a href="{{ .Site.Home.Permalink }}">Home</a></li>
-    <div>
-    {{ range .Site.RegularPages}}
+<header><nav>
+    <a href="{{ .Site.Home.Permalink }}">Home</a>
+    <ul>
+    {{ with .Site.GetPage "section" "portfolio" }}
     <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{ end }}
-    </div>
+    {{ with .Site.GetPage "about" }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    {{ with .Site.GetPage "contact" }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    <li><a href="/ChingChuHsuResume.pdf" target="_blank">Resume</a></li>
+    
 </ul></nav></header>

@@ -9,7 +9,7 @@
         <p>Some of my favorite projects that I've created.</p>
     </div>
     <ul>
-        {{ range where .Site.RegularPages "Section" "project" }}
+        {{ range where .Site.RegularPages "Section" "portfolio" }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</li></a>
         {{ end }}
     </ul>
