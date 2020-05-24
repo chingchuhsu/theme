@@ -8,7 +8,7 @@
         <h2>Personal Projects</h2>
         <p>Some of my favorite projects that I've created.</p>
     </div>
-    <ul>
+    <ul class="projects">
         {{ range where .Site.RegularPages "Section" "portfolio" }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</li></a>
         {{ end }}
