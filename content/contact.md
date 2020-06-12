@@ -4,8 +4,9 @@ date: 2020-05-20T23:46:35+02:00
 draft: false
 layout: "split"
 ---
+I'd love to hear from you!
 
-Helloo you can contact me via
+Find me on any of the following platforms:
 
 * Email: cc@email.com
 
