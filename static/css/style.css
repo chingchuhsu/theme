@@ -123,6 +123,11 @@ nav ul {
     margin-top: 0.75em;
 }
 
+.markdown p {
+    font-size: 20px;
+    line-height: 1.25;
+}
+
 .projects {
     margin-bottom: 4em;
 }
