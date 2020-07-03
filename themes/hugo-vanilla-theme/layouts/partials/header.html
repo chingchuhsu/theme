@@ -1,7 +1,7 @@
 <header class="w-full px-4 max-w-6xl mx-auto" x-data="{ isOpen: false }">
     <nav class="flex items-center justify-between flex-wrap">
-        <a href="{{ .Site.Home.Permalink }}" class="h-16 flex items-center px-4 text-gray-700 font-bold">
-            Home
+        <a href="{{ .Site.Home.Permalink }}" class="text-black uppercase hover:bg-black hover:text-white font-semibold h-12 lg:h-16 flex items-center px-4">
+            Ching-Chu Hsu
         </a>
         <button @click="isOpen = !isOpen" type="button"
             class="block lg:hidden px-2 text-gray-500 hover:text-gray-600 focus:outline-none focus:text-red-400">
@@ -15,10 +15,14 @@
 
         <div class="lg:flex block w-full lg:w-auto hidden mt-2 sm:mt-0 lg:space-x-2"
             :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show="true">
-            {{ range .Site.Sections }}
-            <a href="{{ .Permalink }}" class="text-gray-500 hover:text-blue-400 h-12 lg:h-16 flex items-center px-4"
+            {{ range .Site.Menus.navigation }}
+            <a href="{{ .URL | absURL }}" class="text-black uppercase hover:bg-black hover:text-white font-semibold h-12 lg:h-16 flex items-center px-4"
                 @click="isOpen = false">{{ .Title }}</a>
             {{ end }}
+            <span class="flex items-center h-12 lg:h-16">
+                <a target="_blank" href="ChingChuHsuResume.pdf" class="border-4 border-black font-semibold uppercase hover:bg-black hover:text-white py-2 px-4 flex items-center"
+                    @click="isOpen = false">Resume</a>
+            </span>
         </div>
     </nav>
 </header>
