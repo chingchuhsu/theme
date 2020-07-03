@@ -1,0 +1,42 @@
+<article class="mt-8 hover:shadow-lg p-4">
+    <a href="{{ .Permalink }}">
+        <div class="flex flex-col">
+            {{ $imgName := .Params.thumbnail}}
+            {{ $original := resources.Get (print .Params.thumbnail) }}
+            {{ if $original }}
+            {{ $large := ($original.Fill "1200x630 jpg center q75 jpg Lanczos" )}}
+            {{ $medium := ($original.Fill "900x473 jpg center q75 jpg Lanczos" )}}
+            {{ $small := ($original.Fill "600x315 jpg center q75 jpg Lanczos" )}}
+            <img class="object-cover w-full h-auto" src="{{ $large.Permalink }}"
+                srcset="{{ $small.Permalink}} {{ $small.Width }}w, {{ $medium.Permalink}} {{ $medium.Width }}w, {{ $large.Permalink}} {{ $large.Width }}w"
+                sizes="(max-width: 600px) 600px, (max-width: 900px) 900px, 1200px" loading="lazy"
+                alt="{{ .Params.alt }}" width="{{ $large.Width }}" height="{{ $large.Height }}">
+            {{ end }}
+            <div class="flex flex-col mt-4">
+                <div class="flex flex-row justify-between items-start">
+                    <div>
+                        <div class="text-xs sm:text-sm text-gray-500 flex justify-between">
+                            <div>
+                                <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z" }}'>
+                                    {{- .Date.Format (.Site.Params.dateform | default "January 2, 2006") -}}
+                                </time>
+                                By
+                                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                    <span itemprop="name">{{ .Params.author }}</span>
+                                </span>
+                            </div>
+                            <span class="disqus-comment-count" data-disqus-identifier="{{ .File.UniqueID }}"></span>
+                        </div>
+                        <h3 class="font-semibold text-xl sm:text-2xl inline-block leading-tight">
+                            {{ .Title }}
+                        </h3>
+                    </div>
+                    <span class="font-semibold text-teal-600 text-xs sm:text-sm">
+                        {{ .Section | title }}
+                    </span>
+                </div>
+                <p class="text-sm sm:text-base h-24 text-gray-800">{{ .Summary }}</p>
+            </div>
+        </div>
+    </a>
+</article>
