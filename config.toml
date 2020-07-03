@@ -1,4 +1,5 @@
 baseURL = "https://www.chingchuhsu.com/"
 languageCode = "en-us"
 title = "Ching Chu Hsu's Portfolio"
-theme = ["hugo-cloak-email", "cctheme"]
+theme = ["hugo-cloak-email", "hugo-vanilla-theme"]
+disableKinds = ["taxonomy", "taxonomyTerm"]

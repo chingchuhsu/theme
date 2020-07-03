@@ -2,6 +2,7 @@
 title: "Spatial Distribution of Poor Children in San Francisco, CA"
 date: 2020-06-12T15:20:40+02:00
 draft: false
+thumbnail: "images/thumbnail.png"
 ---
 
 // ArcGIS?
