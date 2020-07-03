@@ -3,3 +3,4 @@ languageCode = "en-us"
 title = "Ching Chu Hsu's Portfolio"
 theme = ["hugo-cloak-email", "hugo-vanilla-theme"]
 disableKinds = ["taxonomy", "taxonomyTerm"]
+sectionPagesMenu = "navigation"
