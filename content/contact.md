@@ -8,7 +8,7 @@ I'd love to hear from you!
 
 Find me on any of the following platforms:
 
-* Email: cc@email.com
+* Email: {{< cloakemail "contact@chingchuhsu.com" >}}
 
 * Github: [chingchuhsu](https://github.com/chingchuhsu)
 
