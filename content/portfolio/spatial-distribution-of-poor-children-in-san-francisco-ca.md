@@ -18,11 +18,11 @@ At the beginning of my Social Sciences study, I took an software course to learn
 
 https://en.wikipedia.org/wiki/Head_Start_(program)
 
-Head Start is a programm launched in 1965 by 
+Head Start is a programm launched in 1965 by the US Department of Health and Human Services, in helping low-income children and families with early childhood education, health, nutrition, and parent involvent services. It operates independently from local schools and is designed to enhance children's physical and emotional well-being and stable family relationships.
 
 //Goal
 
-The goal of the assignment is to examine how many Head Start Centers are within certain distances from children in proverty under 5 years old and visualize on a map of San Francisco.
+The goal is to visualize the distribution of children in proverty under 5 years old in San Francisco and how many Head Start Centers are within certain distances from them.
 
 
 //Data
