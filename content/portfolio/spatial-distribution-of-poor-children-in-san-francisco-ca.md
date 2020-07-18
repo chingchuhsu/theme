@@ -14,7 +14,7 @@ alt: "hero alt"
 // ArcGIS?
 At the beginning of my Social Sciences study, I took an software course to learn how to manage space-related data and visualize it in ArcGIS. ArcGIS is a geographic information system (GIS)
 
-//Background 
+//Background ...
 
 https://en.wikipedia.org/wiki/Head_Start_(program)
 
